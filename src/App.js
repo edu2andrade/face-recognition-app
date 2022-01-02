@@ -66,6 +66,7 @@ class App extends Component {
   onBtnSubmit = () => {
     this.setState({ imageUrl: this.state.input });
     fetch("https://ancient-lowlands-42448.herokuapp.com/imageurl", {
+      // "https://ancient-lowlands-42448.herokuapp.com/imageurl" or "http://localhost:3000/imageurl"
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -76,6 +77,7 @@ class App extends Component {
       .then((response) => {
         if (response) {
           fetch("https://ancient-lowlands-42448.herokuapp.com/image", {
+            // "https://ancient-lowlands-42448.herokuapp.com/image" or "http://localhost:3000/image"
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
