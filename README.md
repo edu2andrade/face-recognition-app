@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Face Recognition App <br> - 
+  
+  <a href="https://ibb.co/4VdGW63"><img src="https://i.ibb.co/DRpy4xT/fr-screenshot.jpg" alt="fr-screenshot" border="0"></a>
+  
+  
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/edu2andrade/face-recognition-app">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/edu2andrade/face-recognition-app?color=%2304D361">
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ ## 💻 About
+ 
+ ### Sign in and give the alien a link of a picture and he's try to detect faces on image
+ 
+ #### Technologies used in this project
 
-## Available Scripts
+- Create React App
+- Javascript & JSX
+- Tachyons
+- Clarifai API
+- NodeJS
+- Express
+- PostgreSQL
+- BcryptJS
+- Knex
 
-In the project directory, you can run:
+#### See the live site here --> [Face Recognition App](https://edu-recognition-app.herokuapp.com/)
 
-### `npm start`
+### Instructions to play in your local enviroment:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Fork and clone this repo and the server --> [Face Recognition Api](https://github.com/edu2andrade/face-recognition-api)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In the front:
+On SubmitSignIn in Signin.js, Register.js and App.js, configure the fetch calls to your localhost
+On package.json, change "start" script to: "react-scripts start"
 
-### `npm test`
+On server:
+On server.js change the knex to connect your database, in my case I use PGAdmin.
+...and in image.js you must add your own Clarifai API Key, you can grab your key [here](https://www.clarifai.com/), it's free.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Then:
 
-### `npm run build`
+- Run --> npm install
+- Start your Database
+- Start the Server, run --> npm start
+- Start the Front, run --> npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📝 License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is under --> [MIT License](./LICENSE).
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🦸 Author
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Made with ❤️ by Eduardo Andrade
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Contact me --> [![Gmail Badge](https://img.shields.io/badge/-edu2andrade@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:edu2andrade@gmail.com)](mailto:edu2andrade@gmail.com)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
